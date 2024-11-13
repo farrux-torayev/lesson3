@@ -1,0 +1,116 @@
+.with {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 100px 0 100px 0;
+  }
+  &__title {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 75.02px;
+    letter-spacing: 0.003em;
+    padding: 37px 162px 25px 0px;
+  }
+  &__sub-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    padding-bottom: 25px;
+  }
+  &__button {
+    width: 193px;
+    height: 48px;
+    padding: 12px 50px 12px 50px;
+    border-radius: 24px;
+    border: 1px solid #377dfd;
+    color: white;
+    background: #377dfd;
+    transition: 2s ease-in-out;
+  }
+  &__button:hover {
+    background: transparent;
+    color: #377dfd;
+  }
+  &__sub-wrapper {
+    position: relative;
+   
+  }
+
+  &__img {
+    position: relative;
+    top: 92px;
+    z-index: 10;
+    left: 40px;
+  }
+
+  &__img1 {
+    position: relative;
+    top: 6px;
+    right: 0px;
+  }
+  &__mobile {
+    display: none;
+  }
+}
+@media (max-width: 571px) {
+  .with {
+    &__wrapper {
+      flex-direction: column-reverse;
+      text-align: center;
+      padding: 0;
+    }
+    &__desktop {
+      display: none;
+    }
+    &__mobile {
+      display: block;
+    }
+    &__title {
+      padding: 0;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 36.4px;
+      letter-spacing: 0.003em;
+    }
+    &__sub-title {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 34px;
+      letter-spacing: 0.01em;
+    }
+    &__button {
+      width: 140px;
+      height: 38px;
+      padding: 10px 35px 10px 35px;
+      border-radius: 24px;
+      transition: 2s ease-in-out;
+      margin-bottom: 100px;
+    }
+    &__button:hover {
+      background: transparent;
+    }
+    &__img1 {
+      position: relative;
+      top: 0px;
+      right: 28px;
+      width: 180px;
+      border-radius: 16px;
+      padding: 100px 0 142px 0;
+    }
+    &__img {
+      position: relative;
+      top: -50px;
+      z-index: 10;
+      left: 30px;
+      width: 221px;
+      height: 196px;
+
+      border-radius: 16px;
+    }
+    &__sub-info {
+      padding-bottom: 45px;
+    }
+  }
+}
